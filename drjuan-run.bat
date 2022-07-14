@@ -29,6 +29,18 @@
   @ECHO Now exiting.
   @EXIT /B
 )
+
+:PASSJUAN
+@echo off
+SET password=
+SET /p password= Password: 
+IF NOT '%password%'=='' SET password=%password:~0,9%
+IF '%password%'=='devito' GOTO CORES
+IF '%password%'=='drjuan' GOTO CORES
+IF '%password%'=='' GOTO INVALIDUSER
+ECHO "%password%" is not valid
+GOTO PASSJUAN
+
 @REM
 @REM We now set these environmental variables.
 @REM

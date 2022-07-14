@@ -1,1 +1,1 @@
-Default location of output files for double-click-run.gms
+Location of output files for calculate.bat
