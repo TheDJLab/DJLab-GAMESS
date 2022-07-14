@@ -1,0 +1,162 @@
+-------------------------------------------------------------------------
+
+  .g8"""bgd       db      `7MMM.     ,MMF'`7MM"""YMM   .M"""bgd  .M"""bgd
+.dP'     `M      ;MM:       MMMb    dPMM    MM    `7  ,MI    "Y ,MI    "Y
+dM'       `     ,V^MML      M YM   ,M MM    MM   d    `MMb.     `MMb.
+MM             ,M  `MM      M  Mb  M' MM    MMmmMM      `YMMNq.   `YMMNq.
+MM.    `7MMF'  A     MA     M  YM.P'  MM    MM   Y  , .     `MM .     `MM
+`Mb.     MM   A'     VML    M  `YM'   MM    MM     ,M Mb     dM Mb     dM
+  `"bmmm!GO .YAN.   .KEES!.JML. `'  .JMML..JMMmmmmMMM P"Ybmmd"  P"Ybmmd"
+
+-------------------------------------------------------------------------
+
+                       GAMESS for Microsoft Windows
+                    http://www.msg.ameslab.gov/gamess
+
+GAMESS References:
+
+"General Atomic and Molecular Electronic Structure System"
+M.W.Schmidt, K.K.Baldridge, J.A.Boatz, S.T.Elbert, M.S.Gordon,
+J.H.Jensen, S.Koseki, N.Matsunaga, K.A.Nguyen, S.Su, T.L.Windus, M.Dupuis,
+J.A.Montgomery J. Comput. Chem., 14, 1347-1363(1993).
+
+"Advances in electronic structure theory: GAMESS a decade later"
+M.S.Gordon, M.W.Schmidt pp. 1167-1189, in
+"Theory and Applications of Computational Chemistry: the first forty years"
+C.E.Dykstra, G.Frenking, K.S.Kim, G.E.Scuseria (editors),
+Elsevier, Amsterdam, 2005.
+=========================================================================
+
+Contents of rungms.gms file:
+
+GAMESSDIR=C:\Users\Public\gamess-64
+AUXDATADIR=C:\Users\Public\gamess-64\auxdata
+RESTARTDIR=C:\Users\Public\gamess-64\restart
+SCRATCHDIR=C:\Users\Public\gamess-64\scratch
+
+=========================================================================
+
+Job Properties
+
+Input Filename               : val349_COX1_efp_energy_sibu.inp
+GAMESS Version               : gamess.2021.R2.P2.intel.msucc.exe
+Compute Processes Requested  : 4
+Nodes Required               : 1
+
+=========================================================================
+
+------------------------ GAMESS EXECUTION SCRIPT ------------------------
+This job is running on host RP3-Razer-Blade under operating system
+Microsoft Windows [Version 10.0.22000.739] at Mon 06/27/2022 - 13:23:24.95
+Available scratch disk at beginning of the job is 218,514,333,696 bytes
+
+EXTBAS=/dev/null
+NUCBAS=/dev/null
+EXTCAB=C:\Users\Public\gamess-64\auxdata\AUXBAS\auxdef21
+POSBAS=/dev/null
+DFTBPAR=C:\Users\Public\gamess-64\auxdata\DFTB
+ERICFMT=C:\Users\Public\gamess-64\auxdata\ericfmt.dat
+MCPPATH=C:\Users\Public\gamess-64\auxdata\MCP
+BASPATH=C:\Users\Public\gamess-64\auxdata\BASES
+QUANPOL=C:\Users\Public\gamess-64\auxdata\QUANPOL
+MAKEFP=C:\Users\Public\gamess-64\restart\val349_COX1_efp_energy_sibu.efp
+GAMMA=C:\Users\Public\gamess-64\restart\val349_COX1_efp_energy_sibu.gamma
+TRAJECT=C:\Users\Public\gamess-64\restart\val349_COX1_efp_energy_sibu.trj
+RESTART=C:\Users\Public\gamess-64\restart\val349_COX1_efp_energy_sibu.rst
+QMWAVE=C:\Users\Public\gamess-64\restart\val349_COX1_efp_energy_sibu.qmw
+MDDIP=C:\Users\Public\gamess-64\restart\val349_COX1_efp_energy_sibu.dip
+OPTHES1=C:\Users\Public\gamess-64\restart\val349_COX1_efp_energy_sibu.hs1
+OPTHES2=C:\Users\Public\gamess-64\restart\val349_COX1_efp_energy_sibu.hs2
+FCIDUMP=C:\Users\Public\gamess-64\restart\val349_COX1_efp_energy_sibu.FCIDUMP
+XYZ=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.xyz
+INPUT=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F05
+PUNCH=C:\Users\Public\gamess-64\restart\val349_COX1_efp_energy_sibu.dat
+AOINTS=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F08
+MOINTS=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F09
+DICTNRY=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F10
+DRTFILE=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F11
+CIVECTR=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F12
+CASINTS=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F13
+CIINTS=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F14
+WORK15=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F15
+WORK16=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F16
+CSFSAVE=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F17
+FOCKDER=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F18
+WORK19=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F19
+DASORT=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F20
+DIABDAT=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F21
+DFTINTS=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F21
+DFTGRID=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F22
+JKFILE=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F23
+ORDINT=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F24
+EFPIND=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F25
+PCMDATA=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F26
+PCMINTS=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F27
+SVPWRK1=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F26
+SVPWRK2=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F27
+COSCAV=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F26
+COSDATA=C:\Users\Public\gamess-64\restart\val349_COX1_efp_energy_sibu.cosmo
+COSPOT=C:\Users\Public\gamess-64\restart\val349_COX1_efp_energy_sibu.pot
+MLTPL=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F28
+MLTPLT=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F29
+DAFL30=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F30
+SOINTX=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F31
+SOINTY=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F32
+SOINTZ=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F33
+SORESC=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F34
+GCILIST=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F37
+HESSIAN=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F38
+QMMMTEI=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F39
+SOCCDAT=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F40
+AABB41=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F41
+BBAA42=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F42
+BBBB43=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F43
+REMD=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F44
+UNV=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F45
+UNPV=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F46
+MCQD50=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F50
+MCQD51=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F51
+MCQD52=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F52
+MCQD53=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F53
+MCQD54=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F54
+MCQD55=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F55
+MCQD56=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F56
+MCQD57=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F57
+MCQD58=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F58
+MCQD59=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F59
+MCQD60=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F60
+MCQD61=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F61
+MCQD62=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F62
+MCQD63=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F63
+MCQD64=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F64
+NMRINT1=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F61
+NMRINT2=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F62
+NMRINT3=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F63
+NMRINT4=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F64
+NMRINT5=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F65
+NMRINT6=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F66
+DCPHFH2=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F67
+DCPHF21=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F68
+ELNUINT=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F67
+NUNUINT=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F68
+GVVPT=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F69
+NUMOCAS=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F70
+NUELCAS=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F72
+RIVMAT=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F51
+RIT2A=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F52
+RIT3A=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F53
+RIT2B=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F54
+RIT3B=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F55
+DEN2P1=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F70
+DEN2P2=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F71
+DEN2P3=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F72
+DEN2P4=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F73
+DEN2NM=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F74
+DEN2OPT=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F75
+GMCREF=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F70
+GMCO2R=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F71
+GMCROC=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F72
+GMCOOC=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F73
+GMCCC0=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F74
+GMCHMA=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F75
+GMCEI1=C:\Users\Public\gamess-64\scratch\val349_COX1_efp_energy_sibu.F76
