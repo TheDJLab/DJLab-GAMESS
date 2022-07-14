@@ -1,5 +1,5 @@
 ::
-::   June 30, 2022 :: Ronald Premo III :: ronpremo-run.bat
+::   July 14, 2022 :: Ronald Premo III :: ronpremo-run.bat
 ::
 :: Run all *.inp files in directory INPUT_DIRECTORY and writes them to
 :: *.log files in directory OUTPUT_DIRECTORY
