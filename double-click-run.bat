@@ -1,13 +1,13 @@
 ::
-::   July 14, 2022 :: Ronald Premo III :: labuser-run.bat
+::   Mar   08, 2015 :: Sarom Leang :: double-click-run.bat
 ::
 :: Run all *.inp files in directory INPUT_DIRECTORY and writes them to
 :: *.log files in directory OUTPUT_DIRECTORY
 ::
-@IF NOT EXIST labuser-run.gms (
+@IF NOT EXIST double-click-run.gms (
   @ECHO -------------------------------------------------------------------------
   @ECHO "Oh no you didn't!"
-  @ECHO ERROR :: labuser-run.gms file not found. Please make one.
+  @ECHO ERROR :: double-click-run.gms file not found. Please make one.
   @ECHO =========================================================================
   @ECHO.
   @ECHO Create a new txt file called drag-drop-run.gms in this directory.
@@ -29,47 +29,14 @@
   @ECHO Now exiting.
   @EXIT /B
 )
-
 @REM
 @REM We now set these environmental variables.
 @REM
-@FOR /F "tokens=1,2 delims==" %%A IN (labuser-run.gms) DO @SET %%A=%%B
+@FOR /F "tokens=1,2 delims==" %%A IN (double-click-run.gms) DO @SET %%A=%%B
 @REM
 @REM Print out what the user entered to invoke this batch file.
 @REM
 
-:CORES
-@ECHO off
-SET choice=
-SET /p choice= How many cores do you wish to allocate? [1-4]: 
-IF NOT '%choice%'=='' SET choice=%choice:~0,1%
-IF '%choice%'=='1' GOTO 1
-IF '%choice%'=='2' GOTO 2
-IF '%choice%'=='3' GOTO 3
-IF '%choice%'=='4' GOTO 4
-IF '%choice%'=='' GOTO restart
-ECHO "%choice%" is not valid
-ECHO.
-GOTO CORES
-
-:1
-SET /A NCPUS = 1
-GOTO yes
-
-:2
-SET /A NCPUS = 2
-GOTO yes 
-
-:3
-SET /A NCPUS = 3
-GOTO yes 
-
-:4
-SET /A NCPUS = 4
-GOTO yes 
-
-
-:yes
 @ECHO -----------------------------------------------------------------------
 @ECHO                 GAMESS Double Click ^& Run Job Submission
 @ECHO.
@@ -93,6 +60,4 @@ GOTO yes
 @echo.
 @echo Finish with GAMESS job submission
 @echo.
-
-:restart 
-@PAUSE
+@pause

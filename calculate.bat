@@ -60,6 +60,14 @@ GOTO restart
 
 :yes
 
+@REM
+@REM We now set these environmental variables.
+@REM
+@FOR /F "tokens=1,2 delims==" %%A IN (calculate.gms) DO @SET %%A=%%B
+@REM
+@REM Print out what the user entered to invoke this batch file.
+@REM
+
 @ECHO -----------------------------------------------------------------------
 @ECHO                 GAMESS Double Click ^& Run Job Submission
 @ECHO.

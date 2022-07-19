@@ -30,6 +30,14 @@
   @EXIT /B
 )
 
+@REM
+@REM We now set these environmental variables.
+@REM
+@FOR /F "tokens=1,2 delims==" %%A IN (drjuan-run.gms) DO @SET %%A=%%B
+@REM
+@REM Print out what the user entered to invoke this batch file.
+@REM
+
 :PASSJUAN
 @echo off
 SET password=
@@ -41,14 +49,36 @@ IF '%password%'=='' GOTO INVALIDUSER
 ECHO "%password%" is not valid
 GOTO PASSJUAN
 
-@REM
-@REM We now set these environmental variables.
-@REM
-@FOR /F "tokens=1,2 delims==" %%A IN (drjuan-run.gms) DO @SET %%A=%%B
-@REM
-@REM Print out what the user entered to invoke this batch file.
-@REM
+:CORES
+SET choice=
+SET /p choice= How many cores do you wish to allocate? [1-4]: 
+IF NOT '%choice%'=='' SET choice=%choice:~0,1%
+IF '%choice%'=='1' GOTO 1
+IF '%choice%'=='2' GOTO 2
+IF '%choice%'=='3' GOTO 3
+IF '%choice%'=='4' GOTO 4
+IF '%choice%'=='' GOTO restart
+ECHO "%choice%" is not valid
+ECHO.
+GOTO CORES
 
+:1
+SET /A NCPUS = 1
+GOTO yes
+
+:2
+SET /A NCPUS = 2
+GOTO yes 
+
+:3
+SET /A NCPUS = 3
+GOTO yes 
+
+:4
+SET /A NCPUS = 4
+GOTO yes 
+
+:yes
 @ECHO -----------------------------------------------------------------------
 @ECHO                 GAMESS Double Click ^& Run Job Submission
 @ECHO.

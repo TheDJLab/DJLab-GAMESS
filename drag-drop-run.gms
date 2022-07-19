@@ -1,0 +1,2 @@
+NCPUS=1
+VERSION=2021.R2.P2.intel.msucc

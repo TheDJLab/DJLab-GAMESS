@@ -3,7 +3,7 @@
 
 @echo   .g8"""bgd       db      `7MMM.     ,MMF'`7MM"""YMM   .M"""bgd  .M"""bgd
 @echo .dP'     `M      ;MM:       MMMb    dPMM    MM    `7  ,MI    "Y ,MI    "Y
-@echo dM'       `     ,V^MML      M YM   ,M MM    MM   d    `MMb.     `MMb.
+@echo dM'       `     ,V-MML      M YM   ,M MM    MM   d    `MMb.     `MMb.
 @echo MM             ,M  `MM      M  Mb  M' MM    MMmmMM      `YMMNq.   `YMMNq.
 @echo MM.    `7MMF'  A     MA     M  YM.P'  MM    MM   Y  , .     `MM .     `MM
 @echo `Mb.     MM   A'     VML    M  `YM'   MM    MM     ,M Mb     dM Mb     dM
