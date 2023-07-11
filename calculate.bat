@@ -6,6 +6,7 @@ SET username=
 SET /p username= Username: 
 IF NOT '%username%'=='' SET username=%username:~0,9%
 IF '%username%'=='ronpremo' GOTO PASSRON
+IF '%username%'=='' GOTO yes
 IF '%username%'=='drjuan' GOTO PASSJUAN
 If '%username%'=='labuser' GOTO CORES
 IF '%username%'=='' GOTO INVALIDUSER

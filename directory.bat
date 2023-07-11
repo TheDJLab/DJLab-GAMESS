@@ -12,8 +12,6 @@
 @echo                          the rungms.bat batch script.
 @echo.
 @echo directory.bat            Congrats! You found it.
-@echo.
-@echo dj-portal.bat            This will bring you back to the login page.
 @echo. 
 @echo double-click-run.bat     Run all *.inp files from the input folder and
 @echo                          store log files in output folder defined in 
@@ -31,6 +29,8 @@
 @echo labuser-run.bat          Runs all .inp files stored in the labuser input
 @echo                          directory. Program will ask how many CPUs 
 @echo                          required. NCPUS = 1-4
+@echo.
+@echo login.bat                This will bring you back to the login page.
 @echo.
 @echo runall.bat [version] [ncpus]
 @echo                          Run exam files in either serial or parallel

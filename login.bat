@@ -77,7 +77,7 @@ GOTO PASSJUAN
 
 @echo   .g8"""bgd       db      `7MMM.     ,MMF'`7MM"""YMM   .M"""bgd  .M"""bgd
 @echo .dP'     `M      ;MM:       MMMb    dPMM    MM    `7  ,MI    "Y ,MI    "Y
-@echo dM'       `     ,V^MML      M YM   ,M MM    MM   d    `MMb.     `MMb.
+@echo dM'       `     ,V-MML      M YM   ,M MM    MM   d    `MMb.     `MMb.
 @echo MM             ,M  `MM      M  Mb  M' MM    MMmmMM      `YMMNq.   `YMMNq.
 @echo MM.    `7MMF'  A     MA     M  YM.P'  MM    MM   Y  , .     `MM .     `MM
 @echo `Mb.     MM   A'     VML    M  `YM'   MM    MM     ,M Mb     dM Mb     dM
@@ -89,7 +89,7 @@ GOTO PASSJUAN
 @echo.
 @echo Prompt             Action
 @echo =========================================================================
-@echo username-run.bat   Replace "username" with your username to run all 
+@echo ronpremo-run.bat   Replace "username" with your username to run all 
 @echo                    .inp files in your personal input directory. log
 @echo                    output files can be found in your personal output
 @echo                    directory. NCPUS=16 for this program. 
@@ -123,7 +123,7 @@ GOTO BEGINNING
 
 @echo   .g8"""bgd       db      `7MMM.     ,MMF'`7MM"""YMM   .M"""bgd  .M"""bgd
 @echo .dP'     `M      ;MM:       MMMb    dPMM    MM    `7  ,MI    "Y ,MI    "Y
-@echo dM'       `     ,V^MML      M YM   ,M MM    MM   d    `MMb.     `MMb.
+@echo dM'       `     ,V-MML      M YM   ,M MM    MM   d    `MMb.     `MMb.
 @echo MM             ,M  `MM      M  Mb  M' MM    MMmmMM      `YMMNq.   `YMMNq.
 @echo MM.    `7MMF'  A     MA     M  YM.P'  MM    MM   Y  , .     `MM .     `MM
 @echo `Mb.     MM   A'     VML    M  `YM'   MM    MM     ,M Mb     dM Mb     dM
@@ -169,7 +169,7 @@ GOTO BEGINNING
 
 @echo   .g8"""bgd       db      `7MMM.     ,MMF'`7MM"""YMM   .M"""bgd  .M"""bgd
 @echo .dP'     `M      ;MM:       MMMb    dPMM    MM    `7  ,MI    "Y ,MI    "Y
-@echo dM'       `     ,V^MML      M YM   ,M MM    MM   d    `MMb.     `MMb.
+@echo dM'       `     ,V-MML      M YM   ,M MM    MM   d    `MMb.     `MMb.
 @echo MM             ,M  `MM      M  Mb  M' MM    MMmmMM      `YMMNq.   `YMMNq.
 @echo MM.    `7MMF'  A     MA     M  YM.P'  MM    MM   Y  , .     `MM .     `MM
 @echo `Mb.     MM   A'     VML    M  `YM'   MM    MM     ,M Mb     dM Mb     dM

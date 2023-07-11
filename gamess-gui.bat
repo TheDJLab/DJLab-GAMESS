@@ -63,7 +63,7 @@ function closeHTA(reply){
 
       <SCRIPT FOR="Button2" EVENT="onClick" LANGUAGE="VBScript">
         Set WshShell = CreateObject("WScript.Shell")
-        WshShell.Run "C:\Users\Public\gamess-64\GUI\calculate.lnk"
+        WshShell.Run "C:\Users\Public\gamess-64\775001552.bat"
       </SCRIPT>
    
         <INPUT TYPE="Button" NAME="Button3" VALUE="Directory">
